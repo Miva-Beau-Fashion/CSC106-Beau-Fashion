@@ -1,4 +1,8 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body{
-    background-color: #00ff2f;
-    color: #0c9eff;
+    background-color: #f5f0ff;
+    color: #000000;
 }
