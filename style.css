@@ -1,13 +1,25 @@
 /* Base */
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
 }
 
 /* Colors*/
-:root{
+:root {
   --bg: #eee4dc;
   --text: #6b5f57;
   --accent: #b07a2f;
@@ -15,7 +27,7 @@ body {
 }
 
 /* Fixed Navbar */
-.nav{
+.nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,15 +37,15 @@ body {
 }
 
 /* FULL WIDTH container */
-.nav__inner{
-  height: 72px;                 
+.nav__inner {
+  height: 72px;
   display: flex;
   align-items: center;
-  padding: 0 60px;               
+  padding: 0 60px;
 }
 
 /* Logo */
-.nav__logo{
+.nav__logo {
   font-family: "Pacifico", cursive;
   color: var(--logo);
   text-decoration: none;
@@ -41,8 +53,7 @@ body {
   letter-spacing: 1px;
 }
 
-
-.nav__right{
+.nav__right {
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -50,12 +61,12 @@ body {
 }
 
 /* Menu links */
-.nav__menu{
+.nav__menu {
   display: flex;
   gap: 38px;
 }
 
-.nav__link{
+.nav__link {
   text-decoration: none;
   color: var(--text);
   font-size: 14px;
@@ -66,7 +77,7 @@ body {
 }
 
 /* Active underline */
-.nav__link--active::after{
+.nav__link--active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -77,7 +88,7 @@ body {
 }
 
 /* Right DOM */
-.nav__cta{
+.nav__cta {
   text-decoration: none;
   color: var(--accent);
   font-size: 14px;
@@ -89,9 +100,11 @@ body {
 }
 
 /* Burger */
-.nav__toggle{ display: none; }
+.nav__toggle {
+  display: none;
+}
 
-.nav__burger{
+.nav__burger {
   display: none;
   cursor: pointer;
   flex-direction: column;
@@ -99,20 +112,19 @@ body {
   margin-left: auto;
 }
 
-.nav__burger span{
+.nav__burger span {
   width: 24px;
   height: 2px;
   background: var(--text);
 }
 
 /* Responsive */
-@media (max-width: 900px){
-
-  .nav__inner{
+@media (max-width: 900px) {
+  .nav__inner {
     padding: 0 24px;
   }
 
-  .nav__right{
+  .nav__right {
     position: absolute;
     top: 72px;
     left: 0;
@@ -128,19 +140,18 @@ body {
     transition: 0.2s ease;
   }
 
-  .nav__menu{
+  .nav__menu {
     flex-direction: column;
     gap: 20px;
   }
 
-  .nav__burger{
+  .nav__burger {
     display: flex;
   }
 
-  .nav__toggle:checked ~ .nav__right{
+  .nav__toggle:checked ~ .nav__right {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
   }
 }
-
