@@ -1,17 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beau Fashion</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
 
-<body>
-    <header>
-        <div>
-            Beau
-        </div>
-    </header>
-</body>
+    <!-- Pacifico font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Fixed Navbar -->
+  <header class="nav">
+  <div class="nav__inner">
+
+    <!-- Logo -->
+    <a href="#" class="nav__logo">BEAU</a>
+
+    <!-- Mobile Toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav__toggle">
+    <label for="nav-toggle" class="nav__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Right Section (Links + DOM grouped) -->
+    <div class="nav__right">
+      <nav class="nav__menu">
+        <a class="nav__link nav__link--active" href="#">HOME</a>
+        <a class="nav__link" href="#">COLLECTION</a>
+        <a class="nav__link" href="#">EVENTS</a>
+        <a class="nav__link" href="#">ABOUT</a>
+        <a class="nav__link" href="#">CONTACT</a>
+      </nav>
+
+      <a class="nav__cta" href="#">
+        DOM <span>↗</span>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+   
+  </body>
 </html>
