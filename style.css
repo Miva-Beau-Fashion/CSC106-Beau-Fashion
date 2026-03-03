@@ -3,6 +3,36 @@
 }
 
 body{
-    background-color: #f5f0ff;
+    background-color: #F2EBE3;
     color: #000000;
+    margin: 0;
+}
+
+header{
+
+}
+
+.navbar{
+    padding: 30px;
+    background-color: #F2EBE3;
+    border-bottom: 1px solid #A0722A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-text{
+    font-size: 30px;
+    color: #A0722A;
+    
+}
+
+.navbar-links{
+    align-content: center;
+}
+
+a{
+    padding: 10px;
+    border-bottom: 1px solid #A0722A;
+    text-decoration:
 }
