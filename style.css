@@ -74,17 +74,16 @@ body {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 6px;
+  transition: 250ms;
+}
+
+.nav__link:hover {
+    color: var(--accent);
 }
 
 /* Active underline */
-.nav__link--active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 45px;
-  height: 2px;
-  background: var(--accent);
+.nav__link--active {
+    border-bottom: 2px solid var(--accent);
 }
 
 /* Right DOM */
