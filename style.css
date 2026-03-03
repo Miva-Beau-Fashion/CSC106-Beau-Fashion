@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -22,17 +25,21 @@ header{
 }
 
 .logo-text{
+    font-family: 'Pacifico', regular;
     font-size: 30px;
     color: #A0722A;
-    
 }
 
 .navbar-links{
     align-content: center;
 }
 
-a{
-    padding: 10px;
-    border-bottom: 1px solid #A0722A;
-    text-decoration:
+.navbar-links a{
+    font-family: 'Mont', ;
+    font-weight: 400;
+    padding: 0px 0px 8px 0px;
+    margin-left: 30px;
+    border-bottom: 2px solid #A0722A;
+    text-decoration: none;
+    color: #A0722A;
 }
