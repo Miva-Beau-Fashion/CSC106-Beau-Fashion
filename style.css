@@ -25,7 +25,7 @@ body {
   --accent: #b07a2f;
   --logo: #a7722a;
 }
-
+/* Navbar */
 /* Fixed Navbar */
 .nav {
   position: fixed;
@@ -75,6 +75,7 @@ body {
   position: relative;
   padding-bottom: 6px;
   transition: 250ms;
+  width: 50%;
 }
 
 .nav__link:hover {
@@ -96,6 +97,14 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
+  font-weight: 600;
+}
+
+.nav__DOM
+
+.size-6 {
+  color: var(--accent);
+  scale: 0.4;
 }
 
 /* Burger */
@@ -117,7 +126,7 @@ body {
   background: var(--text);
 }
 
-/* Responsive */
+/* Responsive Navbar*/
 @media (max-width: 900px) {
   .nav__inner {
     padding: 0 24px;
@@ -137,6 +146,10 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: 0.2s ease;
+  }
+
+  .nav__link--active{
+    
   }
 
   .nav__menu {
