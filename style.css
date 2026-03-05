@@ -87,7 +87,7 @@ body {
 /* Active underline */
 .nav__link--active {
     border-bottom: 2px solid var(--accent);
-    color: #250C02;
+    color: #250C02  ;
 }
 
 /* Right DOM */
@@ -108,10 +108,11 @@ body {
   padding-bottom: 6px;
 }
 
-/* Arrow button class */
-.size-6 {
-  width: 20px !important;
+/* Arrow svg styling */
+.nav__svg {
+  width: 20px;
   height: 20px;
+  scale:140%;
 }
 
 /* Burger */
