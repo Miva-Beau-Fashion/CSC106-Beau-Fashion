@@ -21,7 +21,7 @@ body {
 /* Colors*/
 :root {
   --bg: #eee4dc;
-  --text: #6b5f57;
+  --text: #634f46;
   --accent: #b07a2f;
   --logo: #a7722a;
 }
@@ -42,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0 60px;
+  border-bottom: 0.6px solid #A0722A;
 }
 
 /* Logo */
@@ -70,6 +71,7 @@ body {
   text-decoration: none;
   color: var(--text);
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   position: relative;
@@ -85,6 +87,7 @@ body {
 /* Active underline */
 .nav__link--active {
     border-bottom: 2px solid var(--accent);
+    color: #250C02;
 }
 
 /* Right DOM */
@@ -95,16 +98,20 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   display: flex;
-  align-items: center;
-  gap: 6px;
   font-weight: 600;
 }
 
-.nav__DOM
+.nav__DOM{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 6px;
+}
 
+/* Arrow button class */
 .size-6 {
-  color: var(--accent);
-  scale: 0.4;
+  width: 20px !important;
+  height: 20px;
 }
 
 /* Burger */
@@ -146,10 +153,6 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: 0.2s ease;
-  }
-
-  .nav__link--active{
-    
   }
 
   .nav__menu {
