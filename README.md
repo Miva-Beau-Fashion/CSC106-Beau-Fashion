@@ -2,13 +2,12 @@
 # Beau fashion
 ![Beau Fashion Favicon](./Assets/BEAU%20logo%20text.png)  
 ![Beau Fashion Logo](./Assets/image.png)
-![Beau Fashion Favicon](./Assets//favicon-beau.png)
 
  
 ## 📖 Table of Contents
 
 - [About the Project](#about-the-project)
-- [Features](#features)
+- [Features](#features-so-far)
 - [Tech Stack](#tech-stack)
 
 ---
@@ -26,16 +25,10 @@ This project is the a multi-page website for an upcoming fashion house. It was c
 - [x] External CSS for styling: Completed
 - [ ] DOM Structure: Incomplete
 
-## Features
- Contains 2/5± pages as required by 
-
- Showcases fashion house collections/items
-
- Includes functional pages for contacts and upcoming events
-
- Consistent navigation
-
- Responsive page design
+## Features So Far
+- Contains 1/5± pages as required by Lab assessment
+- Consistent navigation bar
+- Responsive navigation bar
   
 ## Tech Stack
 HTML  
