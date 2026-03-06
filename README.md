@@ -1,6 +1,8 @@
  
-# 🛒 Beau fashion
-
+# Beau fashion
+![Beau Fashion Favicon](./Assets/BEAU%20logo%20text.png)  
+![Beau Fashion Logo](./Assets/image.png)
+![Beau Fashion Favicon](./Assets//favicon-beau.png)
 
  
 ## 📖 Table of Contents
@@ -8,29 +10,38 @@
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [The Team](#the-team)
 
 ---
  
 
-## 🛍️ About the Project
-This project is about developing a multi-page website for an upcoming fashion house.
-This project has a tutored mark and it will help students collaborate effectively.
+## About the Project
+This project is the a multi-page website for an upcoming fashion house. It was created as a result of the CSC106 100Level, 2nd semester lab assessment with the following requirements for completion:  
+- [x] Naming (Beau): Completed
+- [ ] Consistent link structure: In-Progress
+- [ ] Board of Trustees (Group Members' photos): Undone
+- [ ] Inquiries/Appointments Page: Undone
+- [ ] Upcoming Events: Undone
+- [ ] A marquee on all pages displaying information (e.g announcements): In-Progress
+- [ ] Any javascript feature of our choosing: In-Progress
+- [x] External CSS for styling: Completed
+- [ ] DOM Structure: Incomplete
 
-## ✨ Features
- Contains at least five web pages
+## Features
+ Contains 2/5± pages as required by 
 
- Showcase the fashion house collections
+ Showcases fashion house collections/items
 
- Include functional pages for appoinments and upcoming events
+ Includes functional pages for contacts and upcoming events
 
  Consistent navigation
+
+ Responsive page design
   
-## 🛠️ Tech Stack
- html
-
- css
-
- java scrip
-## 👥 The Team
+## Tech Stack
+HTML  
+<a href="https://html.spec.whatwg.org/" target="_blank"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" height="40"/></a>  
+CSS  
+<a href="https://www.w3.org/Style/CSS/specs.en.html" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" height="40"/></a>  
+JavaScript  
+<a href="https://262.ecma-international.org/" target="_blank"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" height="40"/></a>
   
