@@ -1,23 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beau Fashion</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
 
-<body>
-    <header>
-        <div class="navbar">
-            <div class="logo-title logo-text">
-                BEAU
-            </div>
-            <div class="navbar-links">
-                <a href="./index.html">Home</a>
-                <a href="./index.html">Collection</a>
-            </div>
+    <!-- Pacifico font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Fixed Navbar -->
+    <header class="nav">
+      <div class="nav__inner">
+        <!-- Logo -->
+        <a href="./index.html" class="nav__logo">BEAU</a>
+
+        <!-- Mobile Toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav__toggle" />
+        <label for="nav-toggle" class="nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Right Section (Links + DOM grouped) -->
+        <div class="nav__right">
+          <nav class="nav__menu">
+            <a class="nav__link nav__link--active" href="#">HOME</a>
+            <a class="nav__link" href="#">COLLECTION</a>
+            <a class="nav__link" href="#">EVENTS</a>
+            <a class="nav__link" href="#">ABOUT</a>
+            <a class="nav__link" href="#">CONTACT</a>
+            <a class="nav__cta" href="#">
+              DOM
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none" class="nav__svg">
+                <path d="M9.01566 17.5008L7.955 16.4402L14.319 10.0762H8.48533V8.57009H16.8858V16.9705L15.3796 16.9705L15.3796 11.1369L9.01566 17.5008Z" fill="#A0722A"/>
+              </svg>
+            </a>
+          </nav>
+          <div class="nav__DOM">
+          </div>
         </div>
+      </div>
     </header>
-</body>
+  </body>
 </html>
