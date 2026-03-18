@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 /* Base */
 * {
   box-sizing: border-box;
@@ -10,7 +11,7 @@ body {
 
 body {
   font-family:
-    system-ui,
+    roboto,
     -apple-system,
     Segoe UI,
     Roboto,
@@ -24,6 +25,7 @@ body {
   --text: #634f46;
   --accent: #b07a2f;
   --logo: #a7722a;
+  --text: #250C02;
 }
 /* Navbar */
 /* Fixed Navbar */
@@ -47,11 +49,14 @@ body {
 
 /* Logo */
 .nav__logo {
-  font-family: "Pacifico", cursive;
-  color: var(--logo);
-  text-decoration: none;
   font-size: 38px;
+}
+
+.logo__design {
   letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--logo);
+  font-family: "Pacifico", cursive;
 }
 
 .nav__right {
@@ -132,6 +137,54 @@ body {
   width: 24px;
   height: 2px;
   background: var(--text);
+}
+
+/* Hero section */
+.hero {
+  margin-top: 70px;
+  display: flex;
+  color: var(--text);
+  font-weight: 300;
+}
+
+.hero__cta{
+  padding: 100px;
+  width: 50vw;
+  align-self: center;
+}
+
+.hero__image img{
+  width: 50vw;
+}
+
+H1{
+  font-family: "Cormorant Garamond";
+  font-size: 86px;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+H1 strong {
+  font-size: 130px;
+}
+
+.cta__button {
+  padding: 10px 20px 10px 20px;
+  background-color: #A0722A;
+  color: #fff;
+}
+
+.cta__button button {
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  list-style: none;
+  justify-self: center;
+}
+
+.cta__button svg {
+  margin-left: 10px;
+  align-self: center;
 }
 
 /* Responsive Navbar*/
