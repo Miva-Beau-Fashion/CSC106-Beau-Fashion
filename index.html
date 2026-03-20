@@ -1,55 +1,268 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beau Fashion</title>
 
-    <!-- Pacifico font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beau Fashion</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- Pacifico font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 
-  <body>
-    <!-- Fixed Navbar -->
-    <header class="nav">
-      <div class="nav__inner">
-        <!-- Logo -->
-        <a href="./index.html" class="nav__logo">BEAU</a>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <!-- Mobile Toggle -->
-        <input type="checkbox" id="nav-toggle" class="nav__toggle" />
-        <label for="nav-toggle" class="nav__burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+<body>
+  <!-- Fixed Navbar -->
+  <header class="nav">
+    <div class="nav__inner">
+      <!-- Logo -->
+      <a href="./index.html" class="nav__logo logo__design">BEAU</a>
 
-        <!-- Right Section (Links + DOM grouped) -->
-        <div class="nav__right">
-          <nav class="nav__menu">
-            <a class="nav__link nav__link--active" href="#">HOME</a>
-            <a class="nav__link" href="#">COLLECTION</a>
-            <a class="nav__link" href="#">EVENTS</a>
-            <a class="nav__link" href="#">ABOUT</a>
-            <a class="nav__link" href="#">CONTACT</a>
-            <a class="nav__cta" href="#">
-              DOM
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none" class="nav__svg">
-                <path d="M9.01566 17.5008L7.955 16.4402L14.319 10.0762H8.48533V8.57009H16.8858V16.9705L15.3796 16.9705L15.3796 11.1369L9.01566 17.5008Z" fill="#A0722A"/>
-              </svg>
-            </a>
-          </nav>
-          <div class="nav__DOM">
-          </div>
+      <!-- Mobile Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" />
+      <label for="nav-toggle" class="nav__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Right Section (Links + DOM grouped) -->
+      <div class="nav__right">
+        <nav class="nav__menu">
+          <a class="nav__link nav__link--active" href="#">HOME</a>
+          <a class="nav__link" href="#">COLLECTION</a>
+          <a class="nav__link" href="#">EVENTS</a>
+          <a class="nav__link" href="#">ABOUT</a>
+          <a class="nav__link" href="#">CONTACT</a>
+          <a class="nav__cta" href="#">
+            DOM
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"
+              class="nav__svg">
+              <path
+                d="M9.01566 17.5008L7.955 16.4402L14.319 10.0762H8.48533V8.57009H16.8858V16.9705L15.3796 16.9705L15.3796 11.1369L9.01566 17.5008Z"
+                fill="#A0722A" />
+            </svg>
+          </a>
+        </nav>
+        <div class="nav__DOM">
         </div>
       </div>
-    </header>
-  </body>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="hero__cta">
+      <H1>WEAR THE <strong class="cta__main">FUTURE</strong></H1>
+      <P><strong class="hero__logo logo__design">BEAU</strong> crafts pieces that empower the modern individual.
+        Experience fashion that speaks without saying a word.</P>
+      <div class="hero__buttons">
+        <a href="#" class="cta__button">
+          BROWSE COLLECTION
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#a)">
+              <path d="M 5 10h 9z" fill="#A0722A" />
+              <path d="M 5 10h 9m-4-5.833L15.833 10 10 15.833" stroke="#f2ebe3" stroke-width="1" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h20v20H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#" class="appointment">BOOK APPOINTMENT</a>
+      </div>
+    </div>
+    <div class="hero__image">
+      <img src="./Assets/trendy brown dress.jpg" alt="Beau_hero_3_ladies_runway_dresses">
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- Marquee Section -->
+  <div class="marquee-wrapper">
+    <div class="marquee" id="marquee">
+      <div class="marquee-content">
+        <span>SS 2025 Runway Show &middot; Lagos</span>
+        <span>&middot;</span>
+        <span>trunk show, london - august 19</span>
+        <span>&middot;</span>
+        <span>fw 2025 preview - october 10</span>
+        <span>&middot;</span>
+        <span>runway show - lagos, june 14, 2026</span>
+        <span>&middot;</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="collection">
+    <div class="collection__item">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"
+        class="collection__icon">
+        <path
+          d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm457-560 21-89-71-59 94-8 36-84 36 84 94 8-71 59 21 89-80-47-80 47ZM480-481Z" />
+      </svg>
+      <p class="collection__title">BESPOKE COUTURE</p>
+      <p class="collection__text">Hand-crafted garments tailored exclusively to you, born from consultation and brought
+        to life by master artisans.</p>
+    </div>
+    <div class="collection__item">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill=""
+        class="collection__icon">
+        <path
+          d="M480-120 80-600l120-240h560l120 240-400 480Zm-95-520h190l-60-120h-70l-60 120Zm55 347v-267H218l222 267Zm80 0 222-267H520v267Zm144-347h106l-60-120H604l60 120Zm-474 0h106l60-120H250l-60 120Z" />
+      </svg>
+      <p class="collection__title">READY-TO-WEAR</p>
+      <p class="collection__text">Seasonal collections that carry theBEAU signature — bold structure, refined fabric,
+        and quiet confidence.</p>
+    </div>
+    <div class="collection__item">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"
+        class="collection__icon">
+        <path
+          d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
+      </svg>
+      <p class="collection__title">ACCESSORIES</p>
+      <p class="collection__text">From sculptural bags to hand-stitched footwear — accessories conceived as wearable art
+        objects.</p>
+    </div>
+  </div>
+
+  <!-- Featured Collection -->
+  <section class="featured">
+    <div class="featured__header">
+      <div class="featured__info">
+        <span class="featured__subtitle">— LATEST COLLECTION</span>
+        <h2 class="featured__title">The <i class="accent-serif">Obsidian</i> Edit</h2>
+        <p class="featured__desc">Spring/Summer 2026 — Where darkness blooms into grace.</p>
+      </div>
+      <a href="#" class="featured__view-all">
+        VIEW COLLECTION
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="featured__grid">
+      <!-- Item 1 -->
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="./Assets/midnight-draped-gown.png" alt="Midnight Drape Gown">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">COUTURE</span>
+          <h3 class="product-card__title">Midnight Drape Gown</h3>
+          <p class="product-card__text">Hand-pleated silk charmeuse with asymmetric draped shoulder.</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="./Assets/structured-blazer-set.png" alt="Structured Blazer Set">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">READY-TO-WEAR</span>
+          <h3 class="product-card__title">Structured Blazer Set</h3>
+          <p class="product-card__text">Power-shouldered blazer with palazzo trousers, ebony wool blend.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="./Assets/sculptural-arch-bag.png" alt="Sculptural Arch Bag">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">ACCESSORIES</span>
+          <h3 class="product-card__title">Sculptural Arch Bag</h3>
+          <p class="product-card__text">Hand-formed vegetable-tanned leather with gold-dipped closure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="philosophy">
+    <div class="philosophy__content">
+      <span class="philosophy__bg-text">BEAU</span>
+      <span class="philosophy__subtitle">OUR PHILOSOPHY</span>
+      <h2 class="philosophy__quote">"Clothing is not decoration.<br>It is declaration."</h2>
+    </div>
+  </section>
+
+  <!-- Appointment Section -->
+  <section class="cta-banner">
+    <div class="cta-banner__content">
+      <div class="cta-banner__info">
+        <span class="cta-banner__subtitle">— LATEST COLLECTION</span>
+        <h2 class="cta-banner__title">Book Your Private <i>Fitting</i></h2>
+      </div>
+      <a href="#" class="cta-banner__button">
+        REQUEST APPOINTMENT
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__main">
+        <a href="#" class="footer__logo logo__design">BEAU</a>
+        <p class="footer__description">Defining modern elegance through timeless design and sustainable luxury.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__header">Quick Links</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Collection</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">The Board</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__header">Contact</h4>
+        <ul class="footer__list">
+          <li class="footer__item">123 Awolowo Road, Ikoyi</li>
+          <li class="footer__item">Lagos, Nigeria</li>
+          <li class="footer__item"><a href="mailto:hello@beau.com" class="footer__link">hello@beau.com</a></li>
+          <li class="footer__item"><a href="tel:+2341234567890" class="footer__link">+234 123 456 7890</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 BEAU Fashion House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./marquee.js"></script>
+</body>
+
 </html>
