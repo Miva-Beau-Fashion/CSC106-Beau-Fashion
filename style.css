@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
 /* Base */
 * {
   box-sizing: border-box;
-}
-html,
-body {
   margin: 0;
   padding: 0;
 }
@@ -27,6 +25,7 @@ body {
   --logo: #a7722a;
   --text: #250C02;
 }
+
 /* Navbar */
 /* Fixed Navbar */
 .nav {
@@ -86,13 +85,13 @@ body {
 }
 
 .nav__link:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 /* Active underline */
 .nav__link--active {
-    border-bottom: 2px solid var(--accent);
-    color: #250C02  ;
+  border-bottom: 2px solid var(--accent);
+  color: #250C02;
 }
 
 /* Right DOM */
@@ -106,7 +105,7 @@ body {
   font-weight: 600;
 }
 
-.nav__DOM{
+.nav__DOM {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -117,7 +116,7 @@ body {
 .nav__svg {
   width: 20px;
   height: 20px;
-  scale:140%;
+  scale: 140%;
 }
 
 /* Burger */
@@ -137,54 +136,6 @@ body {
   width: 24px;
   height: 2px;
   background: var(--text);
-}
-
-/* Hero section */
-.hero {
-  margin-top: 70px;
-  display: flex;
-  color: var(--text);
-  font-weight: 300;
-}
-
-.hero__cta{
-  padding: 100px;
-  width: 50vw;
-  align-self: center;
-}
-
-.hero__image img{
-  width: 50vw;
-}
-
-H1{
-  font-family: "Cormorant Garamond";
-  font-size: 86px;
-  line-height: 1.2em;
-  margin: 0;
-}
-
-H1 strong {
-  font-size: 130px;
-}
-
-.cta__button {
-  padding: 10px 20px 10px 20px;
-  background-color: #A0722A;
-  color: #fff;
-}
-
-.cta__button button {
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-  list-style: none;
-  justify-self: center;
-}
-
-.cta__button svg {
-  margin-left: 10px;
-  align-self: center;
 }
 
 /* Responsive Navbar*/
@@ -218,9 +169,142 @@ H1 strong {
     display: flex;
   }
 
-  .nav__toggle:checked ~ .nav__right {
+  .nav__toggle:checked~.nav__right {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
   }
+}
+
+/* Hero section */
+.hero {
+  margin-top: 72px;
+  display: flex;
+  color: var(--text);
+  font-weight: 300;
+  min-height: calc(100vh - 72px);
+}
+
+.hero__cta {
+  width: 50%;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  background-color: var(--bg);
+}
+
+.hero__image {
+  width: 50%;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+H1 {
+  font-family: "Cormorant Garamond";
+  font-size: 86px;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+H1 strong {
+  font-size: 130px;
+}
+
+.cta__button {
+  padding: 20px 30px;
+  background-color: #A0722A;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.cta__button:hover {
+  opacity: 0.8;
+}
+
+.cta__button svg {
+  margin-left: 10px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero__buttons .appointment {
+  padding: 20px 30px;
+  background-color: transparent;
+  color: #A0722A;
+  border: 1px solid #A0722A;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.hero__buttons .appointment:hover {
+  background-color: #A0722A;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero__cta {
+    width: 100%;
+    padding: 40px 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__image {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+}
+
+/* Marquee Section */
+.marquee-wrapper {
+  background-color: #250c02;
+  color: var(--bg);
+  padding: 16px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 40px;
+  padding-right: 40px;
+}
+
+.marquee-content span {
+  display: flex;
+  align-items: center;
 }
