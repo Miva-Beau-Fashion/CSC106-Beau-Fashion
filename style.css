@@ -308,3 +308,57 @@ H1 strong {
   display: flex;
   align-items: center;
 }
+
+/* Collection Section */
+.collection {
+  max-height: 410px;
+  height: 410px;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.collection__item {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  padding: 30px;
+  background-color: #E4D6C3;
+  border: 1px solid var(--accent);
+}
+
+.collection__icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.collection__title {
+  font-weight: 500;
+  font-family: Cormorant Garamond;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.collection__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .collection {
+    max-height: none;
+    height: auto;
+    flex-direction: column;
+    padding: 60px 24px;
+    gap: 40px;
+  }
+}
