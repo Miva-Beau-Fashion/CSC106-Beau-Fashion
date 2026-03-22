@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beau Fashion</title>
+
+  <!-- Pacifico font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Fixed Navbar -->
+  <header class="nav">
+    <div class="nav__inner">
+      <!-- Logo -->
+      <a href="./index.html" class="nav__logo logo__design">BEAU</a>
+
+      <!-- Mobile Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" />
+      <label for="nav-toggle" class="nav__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Right Section (Links + DOM grouped) -->
+      <div class="nav__right">
+        <nav class="nav__menu">
+          <a class="nav__link" href="../index.html">HOME</a>
+          <a class="nav__link nav__link--active" href="./collection.html">COLLECTION</a>
+          <a class="nav__link" href="#">EVENTS</a>
+          <a class="nav__link" href="#">ABOUT</a>
+          <a class="nav__link" href="#">CONTACT</a>
+          <a class="nav__cta" href="#">
+            DOM
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"
+              class="nav__svg">
+              <path
+                d="M9.01566 17.5008L7.955 16.4402L14.319 10.0762H8.48533V8.57009H16.8858V16.9705L15.3796 16.9705L15.3796 11.1369L9.01566 17.5008Z"
+                fill="#A0722A" />
+            </svg>
+          </a>
+        </nav>
+        <div class="nav__DOM">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Marquee Section -->
+  <div class="marquee-wrapper">
+    <div class="marquee" id="marquee">
+      <div class="marquee-content">
+        <span>SS 2025 Runway Show &middot; Lagos</span>
+        <span>&middot;</span>
+        <span>trunk show, london - august 19</span>
+        <span>&middot;</span>
+        <span>fw 2025 preview - october 10</span>
+        <span>&middot;</span>
+        <span>runway show - lagos, june 14, 2026</span>
+        <span>&middot;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Collection -->
+  <section class="featured">
+    <div class="featured__header">
+      <div class="featured__info">
+        <span class="featured__subtitle">— LATEST COLLECTION</span>
+        <h2 class="featured__title">The <i class="accent-serif">Obsidian</i> Edit</h2>
+        <p class="featured__desc">Spring/Summer 2026 — Where darkness blooms into grace.</p>
+      </div>
+    </div>
+
+    <div class="featured__grid">
+      <!-- Row 1 -->
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="../Assets/midnight-draped-gown.png" alt="Midnight Drape Gown">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">COUTURE</span>
+          <h3 class="product-card__title">Midnight Drape Gown</h3>
+          <p class="product-card__text">Hand-pleated silk charmeuse with asymmetric draped shoulder.</p>
+          <button class="product-card__btn">
+            VIEW
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="../Assets/structured-blazer-set.png" alt="Structured Blazer Set">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">READY-TO-WEAR</span>
+          <h3 class="product-card__title">Structured Blazer Set</h3>
+          <p class="product-card__text">Power-shouldered blazer with palazzo trousers, ebony wool blend.</p>
+          <button class="product-card__btn">
+            VIEW
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="../Assets/sculptural-arch-bag.png" alt="Sculptural Arch Bag">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">ACCESSORIES</span>
+          <h3 class="product-card__title">Sculptural Arch Bag</h3>
+          <p class="product-card__text">Hand-formed vegetable-tanned leather with gold-dipped closure.</p>
+          <button class="product-card__btn">
+            VIEW
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="../Assets/midnight-draped-gown.png" alt="Midnight Drape Gown">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">COUTURE</span>
+          <h3 class="product-card__title">Velvet Corset Gown</h3>
+          <p class="product-card__text">Structured bodice with cascading velvet draping in deep obsidian.</p>
+          <button class="product-card__btn">
+            VIEW
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="../Assets/structured-blazer-set.png" alt="Structured Blazer Set">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">READY-TO-WEAR</span>
+          <h3 class="product-card__title">Pleated Ivory Blouse</h3>
+          <p class="product-card__text">Ethereal silk chiffon with intricate hand-pleating details.</p>
+          <button class="product-card__btn">
+            VIEW
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="../Assets/sculptural-arch-bag.png" alt="Sculptural Arch Bag">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__category">ACCESSORIES</span>
+          <h3 class="product-card__title">Onyx Geometric Tote</h3>
+          <p class="product-card__text">Minimalist silhouette in rigid matte leather with silver-tone hardware.</p>
+          <button class="product-card__btn">
+            VIEW
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination row at bottom of listings -->
+    <div class="pagination">
+      <button class="pagination__btn pagination__btn--active">1</button>
+      <button class="pagination__btn">2</button>
+      <button class="pagination__btn">3</button>
+      <span class="pagination__ellipsis">...</span>
+      <button class="pagination__btn">8</button>
+      <button class="pagination__btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          width="16" height="16">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__main">
+        <a href="#" class="footer__logo logo__design">BEAU</a>
+        <p class="footer__description">Defining modern elegance through timeless design and sustainable luxury.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+              </path>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__header">Quick Links</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Collection</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">The Board</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__header">Contact</h4>
+        <ul class="footer__list">
+          <li class="footer__item">123 Awolowo Road, Ikoyi</li>
+          <li class="footer__item">Lagos, Nigeria</li>
+          <li class="footer__item"><a href="mailto:hello@beau.com" class="footer__link">hello@beau.com</a></li>
+          <li class="footer__item"><a href="tel:+2341234567890" class="footer__link">+234 123 456 7890</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 BEAU Fashion House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./marquee.js"></script>
+</body>
+
+</html>
