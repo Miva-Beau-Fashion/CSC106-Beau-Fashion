@@ -92,6 +92,7 @@ body {
 .nav__link--active {
   border-bottom: 2px solid var(--accent);
   color: #250C02;
+  width: 50%;
 }
 
 /* Right DOM */
@@ -593,7 +594,8 @@ H1 strong {
 
 /* CTA Banner Section */
 .cta-banner {
-  background-color: #d6c4aa; /* Earthy tan background */
+  background-color: #d6c4aa;
+  /* Earthy tan background */
   padding: 100px 80px;
 }
 
@@ -650,20 +652,25 @@ H1 strong {
   .philosophy {
     padding: 100px 24px;
   }
+
   .philosophy__bg-text {
     font-size: 120px;
   }
+
   .philosophy__quote {
     font-size: 36px;
   }
+
   .cta-banner {
     padding: 60px 24px;
   }
+
   .cta-banner__content {
     flex-direction: column;
     text-align: center;
     gap: 40px;
   }
+
   .cta-banner__title {
     font-size: 36px;
   }
@@ -671,7 +678,8 @@ H1 strong {
 
 /* Footer Section */
 .footer {
-  background-color: #0c0a09; /* Deep black/dark brown */
+  background-color: #0c0a09;
+  /* Deep black/dark brown */
   color: #d6c4aa;
   padding: 100px 80px 40px;
 }
@@ -765,13 +773,16 @@ H1 strong {
   .footer {
     padding: 60px 24px 32px;
   }
+
   .footer__inner {
     flex-direction: column;
     gap: 60px;
   }
+
   .footer__main {
     max-width: none;
   }
+
   .footer__bottom {
     margin-top: 60px;
   }
