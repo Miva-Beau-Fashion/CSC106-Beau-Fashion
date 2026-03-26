@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tree — Beau Fashion</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: monospace; font-size: 14px; color: #333; background: #fff; padding: 32px; }
+        h1 { font-family: sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .subtitle { font-family: sans-serif; font-size: 13px; color: #888; margin-bottom: 16px; }
+        .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; font-family: sans-serif; font-size: 11px; }
+        .badge { padding: 2px 8px; border-radius: 3px; font-weight: 600; }
+        .b-all { background: #eee; }
+        .b-home { background: #fff3cd; }
+        .b-col { background: #ffe0cc; }
+        .b-evt { background: #e8daff; }
+        .b-abt { background: #fdd; }
+        .b-con { background: #d4edda; }
+
+        .tree { border: 1px solid #ddd; padding: 20px; overflow-x: auto; }
+        ul { list-style: none; padding-left: 24px; border-left: 1px solid #ccc; }
+        li { position: relative; padding: 3px 0; }
+        li::before { content: ''; position: absolute; left: -24px; top: 14px; width: 24px; height: 1px; background: #ccc; }
+        li:last-child::after { content: ''; position: absolute; left: -25px; top: 14px; bottom: -4px; width: 2px; background: #fff; }
+
+        .n { display: inline; }
+        .t { color: #c7254e; font-weight: 700; }
+        .c { color: #2563eb; }
+        .i { color: #ea580c; }
+        .a { color: #16a34a; }
+        .g { color: #999; font-style: italic; font-size: 12px; }
+
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        summary .arrow { display: inline-block; width: 10px; font-size: 10px; color: #999; transition: transform .15s; }
+        details[open] > summary .arrow { transform: rotate(90deg); }
+
+        .actions { margin-bottom: 16px; font-family: sans-serif; }
+        .actions button { font-size: 12px; padding: 4px 10px; margin-right: 6px; border: 1px solid #ccc; background: #fafafa; cursor: pointer; border-radius: 3px; }
+        .actions button:hover { background: #eee; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 24px; font-family: sans-serif; font-size: 12px; }
+        th, td { border: 1px solid #ddd; padding: 6px 10px; text-align: center; }
+        th { background: #fafafa; font-weight: 600; }
+        td:first-child { text-align: left; font-family: monospace; }
+        .yes { color: #16a34a; }
+        .no { color: #ccc; }
+
+        .diff { margin-top: 4px; padding: 6px 10px; border: 1px dashed #ccc; font-size: 12px; color: #555; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <h1>DOM Overview</h1>
+    <p class="subtitle">Unified tree for all BEAU pages — index, collection, events, about, contact</p>
+
+    <div class="legend">
+        <span class="badge b-all">ALL</span>
+        <span class="badge b-home">HOME</span>
+        <span class="badge b-col">COLLECTION</span>
+        <span class="badge b-evt">EVENTS</span>
+        <span class="badge b-abt">ABOUT</span>
+        <span class="badge b-con">CONTACT</span>
+    </div>
+
+    <div class="actions">
+        <button onclick="toggleAll(true)">Expand All</button>
+        <button onclick="toggleAll(false)">Collapse All</button>
+    </div>
+
+    <div class="tree">
+        <details open>
+            <summary><span class="arrow">▶</span> <span class="t">html</span> <span class="a">lang="en"</span> <span class="badge b-all">ALL</span></summary>
+            <ul>
+                <!-- HEAD -->
+                <li>
+                    <details>
+                        <summary><span class="arrow">▶</span> <span class="t">head</span> <span class="g">— meta, title, links (identical all pages)</span> <span class="badge b-all">ALL</span></summary>
+                        <ul>
+                            <li><span class="t">meta</span> <span class="a">charset="UTF-8"</span></li>
+                            <li><span class="t">meta</span> <span class="a">name="viewport"</span></li>
+                            <li><span class="t">title</span> <span class="g">Beau Fashion</span></li>
+                            <li><span class="t">link</span> <span class="g">x3 font preconnects</span></li>
+                            <li><span class="t">link</span> <span class="a">href="style.css"</span></li>
+                        </ul>
+                    </details>
+                </li>
+                <!-- BODY -->
+                <li>
+                    <details open>
+                        <summary><span class="arrow">▶</span> <span class="t">body</span> <span class="badge b-all">ALL</span></summary>
+                        <ul>
+                            <!-- header.nav -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">header</span><span class="c">.nav</span> <span class="badge b-all">ALL</span></summary>
+                                    <ul>
+                                        <li>
+                                            <details>
+                                                <summary><span class="arrow">▶</span> <span class="t">div</span><span class="c">.nav__inner</span></summary>
+                                                <ul>
+                                                    <li><span class="t">a</span><span class="c">.nav__logo.logo__design</span></li>
+                                                    <li><span class="t">input</span><span class="i">#nav-toggle</span><span class="c">.nav__toggle</span></li>
+                                                    <li><span class="t">label</span><span class="c">.nav__burger</span> <span class="g">[3 spans]</span></li>
+                                                    <li>
+                                                        <details>
+                                                            <summary><span class="arrow">▶</span> <span class="t">div</span><span class="c">.nav__right</span></summary>
+                                                            <ul>
+                                                                <li><span class="t">nav</span><span class="c">.nav__menu</span> <span class="g">[5 links + a.nav__cta]</span></li>
+                                                                <li><span class="t">div</span><span class="c">.nav__DOM</span></li>
+                                                            </ul>
+                                                        </details>
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <!-- marquee -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">div</span><span class="c">.marquee-wrapper</span> <span class="badge b-all">ALL</span></summary>
+                                    <ul>
+                                        <li><span class="t">div</span><span class="i">#marquee</span><span class="c">.marquee</span> → <span class="t">div</span><span class="c">.marquee-content</span> <span class="g">[spans]</span></li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <!-- HOME: hero -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">div</span><span class="c">.hero</span> <span class="badge b-home">HOME</span></summary>
+                                    <ul>
+                                        <li><span class="t">div</span><span class="c">.hero__cta</span> <span class="g">[h1, p, .hero__buttons]</span></li>
+                                        <li><span class="t">div</span><span class="c">.hero__image</span> <span class="g">[img]</span></li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <!-- HOME: collection -->
+                            <li><span class="t">div</span><span class="c">.collection</span> <span class="g">[.collection__item x3]</span> <span class="badge b-home">HOME</span></li>
+
+                            <!-- HOME + COLLECTION: featured -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">section</span><span class="c">.featured</span> <span class="badge b-home">HOME</span> <span class="badge b-col">COLLECTION</span></summary>
+                                    <ul>
+                                        <li><span class="t">div</span><span class="c">.featured__header</span> <span class="g">[info, link]</span></li>
+                                        <li><span class="t">div</span><span class="c">.featured__grid</span> <span class="g">[.product-card x3 HOME / x6 COLLECTION]</span></li>
+                                        <li><span class="t">div</span><span class="c">.pagination</span> <span class="g">[btns, ellipsis]</span> <span class="badge b-col">COLLECTION only</span></li>
+                                    </ul>
+                                    <div class="diff">
+                                        <strong>HOME:</strong> 3 cards, includes a.featured__view-all, no pagination.<br>
+                                        <strong>COLLECTION:</strong> 6 cards with button.product-card__btn, adds .pagination.
+                                    </div>
+                                </details>
+                            </li>
+
+                            <!-- HOME only -->
+                            <li><span class="t">section</span><span class="c">.philosophy</span> <span class="g">[bg-text, subtitle, h2]</span> <span class="badge b-home">HOME</span></li>
+                            <li><span class="t">section</span><span class="c">.cta-banner</span> <span class="g">[info, button]</span> <span class="badge b-home">HOME</span></li>
+
+                            <!-- EVENTS -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">section</span><span class="c">.events-page</span> <span class="badge b-evt">EVENTS</span></summary>
+                                    <ul>
+                                        <li><span class="t">div</span><span class="c">.events-page__header</span> <span class="g">[subtitle, h2, p]</span></li>
+                                        <li><span class="t">div</span><span class="c">.events-list</span> <span class="g">[.event-card x3 — date, details, cta]</span></li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <!-- ABOUT -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">section</span><span class="c">.trustees</span> <span class="badge b-abt">ABOUT</span></summary>
+                                    <ul>
+                                        <li><span class="t">div</span><span class="c">.trustees__header</span> <span class="g">[subtitle, h2, p]</span></li>
+                                        <li><span class="t">div</span><span class="c">.trustees__grid</span> <span class="g">[.trustee-card x13 — image, content]</span></li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <!-- CONTACT -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">section</span><span class="c">.contact-page</span> <span class="badge b-con">CONTACT</span></summary>
+                                    <ul>
+                                        <li>
+                                            <details>
+                                                <summary><span class="arrow">▶</span> <span class="t">div</span><span class="c">.contact-page__inner</span></summary>
+                                                <ul>
+                                                    <li><span class="t">div</span><span class="c">.contact-page__info</span> <span class="g">[subtitle, h2, p, .contact-details x3]</span></li>
+                                                    <li><span class="t">div</span><span class="c">.contact-page__form-wrapper</span> <span class="g">[form.contact-form — 4 groups + button]</span></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <!-- footer -->
+                            <li>
+                                <details>
+                                    <summary><span class="arrow">▶</span> <span class="t">footer</span><span class="c">.footer</span> <span class="badge b-all">ALL</span></summary>
+                                    <ul>
+                                        <li><span class="t">div</span><span class="c">.footer__inner</span> <span class="g">[main, links, contact]</span></li>
+                                        <li><span class="t">div</span><span class="c">.footer__bottom</span> <span class="g">[p]</span></li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <!-- script -->
+                            <li><span class="t">script</span> <span class="a">src="marquee.js"</span> <span class="badge b-all">ALL</span></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </details>
+    </div>
+
+    <!-- Summary Table -->
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align:left">Section</th>
+                <th><span class="badge b-home">HOME</span></th>
+                <th><span class="badge b-col">COLL</span></th>
+                <th><span class="badge b-evt">EVT</span></th>
+                <th><span class="badge b-abt">ABT</span></th>
+                <th><span class="badge b-con">CON</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>header.nav</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td>div.marquee-wrapper</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td>div.hero</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>div.collection</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>section.featured</td><td class="yes">✓</td><td class="yes">✓*</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>section.philosophy</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>section.cta-banner</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>section.events-page</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>section.trustees</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td><td class="no">—</td></tr>
+            <tr><td>section.contact-page</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
+            <tr><td>footer.footer</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+        </tbody>
+    </table>
+    <p style="font-size:11px;color:#999;margin-top:6px;font-family:sans-serif;">* COLLECTION adds .product-card__btn on each card, doubles the card count (6), and appends .pagination.</p>
+
+    <script>
+        function toggleAll(expand) {
+            document.querySelectorAll('details').forEach(d => {
+                expand ? d.setAttribute('open','') : d.removeAttribute('open');
+            });
+            if (!expand) document.querySelector('details').setAttribute('open','');
+        }
+    </script>
+</body>
+</html>
