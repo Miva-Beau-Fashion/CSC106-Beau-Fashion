@@ -209,35 +209,39 @@ body {
     align-items: center;
 }
 
-
-/* Board of Trustees Section */
-.trustees {
-    padding: 80px 120px;
+/* Contact Page Section */
+.contact-page {
+    padding: 100px 120px;
     background-color: var(--bg);
 }
 
-.trustees__header {
-    text-align: center;
-    margin-bottom: 60px;
-    padding-top: 40px;
+.contact-page__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
 }
 
-.trustees__subtitle {
+.contact-page__info {
+    flex: 1;
+}
+
+.contact-page__subtitle {
     color: var(--accent);
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
-.trustees__title {
+.contact-page__title {
     font-family: "Cormorant Garamond", serif;
     font-size: 52px;
     font-weight: 500;
     color: var(--text);
-    margin-bottom: 16px;
-    line-height: 1;
+    margin-bottom: 24px;
+    line-height: 1.1;
 }
 
 .accent-serif {
@@ -246,100 +250,154 @@ body {
     color: var(--accent);
 }
 
-.trustees__desc {
+.contact-page__desc {
     font-size: 16px;
     font-weight: 300;
     color: var(--text);
     opacity: 0.8;
-    max-width: 600px;
-    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 40px;
 }
 
-.trustees__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-}
-
-.trustee-card {
+.contact-details {
     display: flex;
     flex-direction: column;
-    background-color: #f5ede6;
-    border: 1px solid rgba(176, 122, 47, 0.1);
-    transition: transform 0.4s ease;
-    cursor: pointer;
+    gap: 32px;
 }
 
-.trustee-card:hover {
-    transform: translateY(-10px);
-}
-
-.trustee-card__image {
-    width: 100%;
-    aspect-ratio: 3/4;
-    background-color: #e6dcd0;
-    border-bottom: 1px solid rgba(176, 122, 47, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-.trustee-card__image::after {
-    content: "PHOTO";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: rgba(176, 122, 47, 0.4);
-    font-weight: 600;
-}
-
-.trustee-card__content {
-    padding: 24px 20px;
-    text-align: center;
-}
-
-.trustee-card__name {
+.contact-detail h4 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 600;
     color: var(--text);
+    margin-bottom: 8px;
 }
 
-.trustee-card__role {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+.contact-detail p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+.contact-detail a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
     color: var(--accent);
+}
+
+.contact-page__form-wrapper {
+    flex: 1.2;
+    background-color: #f5ede6;
+    padding: 60px 48px;
+    border: 1px solid rgba(176, 122, 47, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text);
     text-transform: uppercase;
 }
 
-@media (max-width: 1200px) {
-    .trustees__grid {
-        grid-template-columns: repeat(3, 1fr);
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(176, 122, 47, 0.3);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(99, 79, 70, 0.5);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    background-color: #fff;
+}
+
+.form-group select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%24%2024%22%20fill%3D%22none%22%20stroke%3D%22%23b07a2f%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 48px;
+}
+
+.contact-page__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.contact-page__button:hover {
+    background-color: #926e38;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .contact-page__inner {
+        flex-direction: column;
+        gap: 60px;
     }
 }
 
 @media (max-width: 900px) {
-    .trustees {
+    .contact-page {
         padding: 60px 24px;
     }
-
-    .trustees__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    
+    .contact-page__form-wrapper {
+        padding: 40px 24px;
+    }
+    
+    .contact-page__title {
+        font-size: 40px;
     }
 }
-
-@media (max-width: 600px) {
-    .trustees__grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /* Footer Section */
 .footer {
