@@ -283,6 +283,19 @@ body {
     overflow: hidden;
 }
 
+.trustee-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* Hide placeholder text when image is present */
+.trustee-card__image:has(img)::after {
+    display: none;
+}
+
 .trustee-card__image::after {
     content: "PHOTO";
     position: absolute;

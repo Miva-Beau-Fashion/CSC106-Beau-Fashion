@@ -93,6 +93,7 @@ body {
 .nav__link--active {
     border-bottom: 2px solid var(--accent);
     color: #250C02;
+    width: 70%;
 }
 
 /* Right DOM */
@@ -389,11 +390,11 @@ body {
     .contact-page {
         padding: 60px 24px;
     }
-    
+
     .contact-page__form-wrapper {
         padding: 40px 24px;
     }
-    
+
     .contact-page__title {
         font-size: 40px;
     }
