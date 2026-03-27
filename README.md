@@ -1,7 +1,7 @@
  
 # Beau fashion
-![Beau Fashion Favicon](./Assets/BEAU%20logo%20text.png)  
-![Beau Fashion Logo](./Assets/image.png)
+![Beau Fashion Favicon](./Assets/Beau%20Open%20Graph.png)  
+![Beau Fashion Logo](./Assets/favicon-beau.png)
 
  
 ## 📖 Table of Contents
@@ -16,14 +16,14 @@
 ## About the Project
 This project is the a multi-page website for an upcoming fashion house. It was created as a result of the CSC106 100Level, 2nd semester lab assessment with the following requirements for completion:  
 - [x] Naming (Beau): Completed
-- [ ] Consistent link structure: In-Progress
-- [ ] Board of Trustees (Group Members' photos): Undone
-- [ ] Inquiries/Appointments Page: Undone
-- [ ] Upcoming Events: Undone
-- [ ] A marquee on all pages displaying information (e.g announcements): In-Progress
-- [ ] Any javascript feature of our choosing: In-Progress
+- [x] Consistent link structure: Completed
+- [x] Board of Trustees (Group Members' photos): Completed
+- [x] Inquiries/Appointments Page: Completed
+- [x] Upcoming Events: Completed
+- [x] A marquee on all pages displaying information (e.g announcements): Completed
+- [x] Any javascript feature of our choosing: Marquee created with javascript
 - [x] External CSS for styling: Completed
-- [ ] DOM Structure: Incomplete
+- [x] DOM Structure: Complete
 
 ## Features So Far
 - Contains 1/5± pages as required by Lab assessment
