@@ -26,9 +26,13 @@ This project is the a multi-page website for an upcoming fashion house. It was c
 - [x] DOM Structure: Complete
 
 ## Features So Far
-- Contains 1/5± pages as required by Lab assessment
+- Contains 6/5± pages as required by Lab assessment with the sixth being our DOM structure outlined
 - Consistent navigation bar
 - Responsive navigation bar
+- Responsive body design
+- Consistent linking
+- Marquee at the top of every page
+- Trustees with names and pictures listed out at "about" page
   
 ## Tech Stack
 HTML  
